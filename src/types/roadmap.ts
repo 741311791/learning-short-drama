@@ -43,8 +43,9 @@ export interface Concept {
 export interface Resource {
   name: string
   description: string
-  url?: string
+  url?: string // 可以是URL或工具描述(如"手机自带录音APP")
   search_keyword?: string
+  tips?: string
 }
 
 // Derived types (computed on client)

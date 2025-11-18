@@ -18,8 +18,9 @@ export const ResourceSchema = z
   .object({
     name: z.string().min(1),
     description: z.string().min(1),
-    url: z.string().url().optional(),
+    url: z.string().optional(), // 允许任意字符串,包括URL和工具描述
     search_keyword: z.string().optional(),
+    tips: z.string().optional(), // 支持tips字段
   })
   .refine((data) => data.url || data.search_keyword, {
     message: 'Either url or search_keyword must be provided',

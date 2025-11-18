@@ -9,6 +9,21 @@ interface ThemeState {
   toggleTheme: () => void
 }
 
+// Helper function to update DOM classes with View Transitions API
+const updateThemeClass = (newTheme: Theme) => {
+  const updateDOM = () => {
+    document.documentElement.classList.remove('light', 'dark')
+    document.documentElement.classList.add(newTheme)
+  }
+
+  // Use View Transitions API if supported
+  if ('startViewTransition' in document && typeof (document as any).startViewTransition === 'function') {
+    ;(document as any).startViewTransition(updateDOM)
+  } else {
+    updateDOM()
+  }
+}
+
 export const useThemeStore = create<ThemeState>()(
   persist(
     (set) => ({
@@ -16,37 +31,14 @@ export const useThemeStore = create<ThemeState>()(
 
       setTheme: (theme) =>
         set(() => {
-          // Update DOM with View Transitions API if supported
-          if ('startViewTransition' in document) {
-            ;(document as Document & { startViewTransition: (callback: () => void) => void })
-              .startViewTransition(() => {
-                document.documentElement.classList.remove('light', 'dark')
-                document.documentElement.classList.add(theme)
-              })
-          } else {
-            document.documentElement.classList.remove('light', 'dark')
-            document.documentElement.classList.add(theme)
-          }
-
+          updateThemeClass(theme)
           return { theme }
         }),
 
       toggleTheme: () =>
         set((state) => {
           const newTheme: Theme = state.theme === 'light' ? 'dark' : 'light'
-
-          // Update DOM with View Transitions API if supported
-          if ('startViewTransition' in document) {
-            ;(document as Document & { startViewTransition: (callback: () => void) => void })
-              .startViewTransition(() => {
-                document.documentElement.classList.remove('light', 'dark')
-                document.documentElement.classList.add(newTheme)
-              })
-          } else {
-            document.documentElement.classList.remove('light', 'dark')
-            document.documentElement.classList.add(newTheme)
-          }
-
+          updateThemeClass(newTheme)
           return { theme: newTheme }
         }),
     }),
