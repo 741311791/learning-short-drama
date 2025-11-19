@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ThemeToggle } from '@/components/ui/ThemeToggle'
+import { CompactSearchBar } from '@/components/search/CompactSearchBar'
 import { Home, Heart, Search } from 'lucide-react'
 
 export function Header() {
@@ -10,6 +11,11 @@ export function Header() {
         <Link to="/" className="flex items-center space-x-2 transition-opacity hover:opacity-80">
           <span className="text-xl font-bold">短剧学习路线图</span>
         </Link>
+
+        {/* Center: Compact Search Bar (desktop only) */}
+        <div className="hidden lg:block flex-1 max-w-md mx-8">
+          <CompactSearchBar />
+        </div>
 
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center space-x-6">
@@ -29,7 +35,7 @@ export function Header() {
           </Link>
           <Link
             to="/search"
-            className="flex items-center space-x-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            className="flex items-center space-x-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground lg:hidden"
           >
             <Search className="h-4 w-4" />
             <span>搜索</span>

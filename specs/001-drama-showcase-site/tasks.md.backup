@@ -26,16 +26,16 @@ This is a single-project web application with structure:
 
 **Purpose**: Project initialization and basic structure
 
-- [X] T001 Initialize Vite + React + TypeScript project with package.json and tsconfig.json at repository root
-- [X] T002 [P] Install core dependencies (react, react-dom, react-router-dom, zustand, zod) per research.md
-- [X] T003 [P] Install UI dependencies (@radix-ui components, tailwindcss, class-variance-authority) per research.md
-- [X] T004 [P] Install development dependencies (typescript, vite, eslint, prettier) per research.md
-- [X] T005 Configure Tailwind CSS with tailwind.config.js and darkMode class strategy
-- [X] T006 [P] Configure ESLint and Prettier with .eslintrc.json and .prettierrc
-- [X] T007 [P] Create project directory structure per plan.md (src/components, src/pages, src/lib, src/types, src/data, public/data)
-- [X] T008 Copy duanju.json to public/data/duanju.json for static hosting
-- [X] T009 [P] Setup Vite configuration in vite.config.ts with code splitting per research.md
-- [X] T010 [P] Create base HTML template in index.html with theme script to prevent flash
+- [ ] T001 Initialize Vite + React + TypeScript project with package.json and tsconfig.json at repository root
+- [ ] T002 [P] Install core dependencies (react, react-dom, react-router-dom, zustand, zod) per research.md
+- [ ] T003 [P] Install UI dependencies (@radix-ui components, tailwindcss, class-variance-authority) per research.md
+- [ ] T004 [P] Install development dependencies (typescript, vite, eslint, prettier) per research.md
+- [ ] T005 Configure Tailwind CSS with tailwind.config.js and darkMode class strategy
+- [ ] T006 [P] Configure ESLint and Prettier with .eslintrc.json and .prettierrc
+- [ ] T007 [P] Create project directory structure per plan.md (src/components, src/pages, src/lib, src/types, src/data, public/data)
+- [ ] T008 Copy duanju.json to public/data/duanju.json for static hosting
+- [ ] T009 [P] Setup Vite configuration in vite.config.ts with code splitting per research.md
+- [ ] T010 [P] Create base HTML template in index.html with theme script to prevent flash
 
 ---
 
@@ -45,16 +45,16 @@ This is a single-project web application with structure:
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [X] T011 Create TypeScript type definitions in src/types/roadmap.ts based on data-model.md (Roadmap, Stage, Module, Concept, Resource, UserProfile)
-- [X] T012 [P] Create Zod validation schemas in src/lib/validation.ts per data-model.md (RoadmapSchema, StageSchema, ModuleSchema, ConceptSchema)
-- [X] T013 [P] Create utility functions in src/lib/utils.ts (cn helper, generateModuleId, generateConceptId, estimateReadingTime)
-- [X] T014 Create Zustand store in src/store/useUserProgressStore.ts with localStorage persistence for favorites and completed_modules per contracts/data-operations.md
-- [X] T015 [P] Create Zustand store in src/store/useThemeStore.ts for theme management (light/dark) with View Transitions API support
-- [X] T016 Create data loading service in src/lib/dataLoader.ts with loadRoadmapData() and loadStageById() functions per contracts/data-operations.md
-- [X] T017 [P] Setup React Router in src/App.tsx with routes for home, stage details, module details, concept details, search, and favorites
-- [X] T018 [P] Create global CSS in src/index.css with Tailwind directives, CSS variables for spacing (8px grid), and typography styles
-- [X] T019 [P] Create shadcn/ui base components setup with src/components/ui/ directory structure
-- [X] T020 Install shadcn/ui components (Button, Card, Badge, Skeleton) using CLI per quickstart.md
+- [ ] T011 Create TypeScript type definitions in src/types/roadmap.ts based on data-model.md (Roadmap, Stage, Module, Concept, Resource, UserProfile)
+- [ ] T012 [P] Create Zod validation schemas in src/lib/validation.ts per data-model.md (RoadmapSchema, StageSchema, ModuleSchema, ConceptSchema)
+- [ ] T013 [P] Create utility functions in src/lib/utils.ts (cn helper, generateModuleId, generateConceptId, estimateReadingTime)
+- [ ] T014 Create Zustand store in src/store/useUserProgressStore.ts with localStorage persistence for favorites and completed_modules per contracts/data-operations.md
+- [ ] T015 [P] Create Zustand store in src/store/useThemeStore.ts for theme management (light/dark) with View Transitions API support
+- [ ] T016 Create data loading service in src/lib/dataLoader.ts with loadRoadmapData() and loadStageById() functions per contracts/data-operations.md
+- [ ] T017 [P] Setup React Router in src/App.tsx with routes for home, stage details, module details, concept details, search, and favorites
+- [ ] T018 [P] Create global CSS in src/index.css with Tailwind directives, CSS variables for spacing (8px grid), and typography styles
+- [ ] T019 [P] Create shadcn/ui base components setup with src/components/ui/ directory structure
+- [ ] T020 Install shadcn/ui components (Button, Card, Badge, Skeleton) using CLI per quickstart.md
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -75,27 +75,27 @@ This is a single-project web application with structure:
 
 **Layout & Navigation**
 
-- [X] T021 [P] [US1] Create AppLayout component in src/components/layout/AppLayout.tsx with header, main content area, and theme toggle button
-- [X] T022 [P] [US1] Create Header component in src/components/layout/Header.tsx with site title and navigation links
-- [X] T023 [P] [US1] Create ThemeToggle component in src/components/ui/ThemeToggle.tsx integrating with useThemeStore and View Transitions API
-- [X] T024 [P] [US1] Create Footer component in src/components/layout/Footer.tsx with copyright and links
+- [ ] T021 [P] [US1] Create AppLayout component in src/components/layout/AppLayout.tsx with header, main content area, and theme toggle button
+- [ ] T022 [P] [US1] Create Header component in src/components/layout/Header.tsx with site title and navigation links
+- [ ] T023 [P] [US1] Create ThemeToggle component in src/components/ui/ThemeToggle.tsx integrating with useThemeStore and View Transitions API
+- [ ] T024 [P] [US1] Create Footer component in src/components/layout/Footer.tsx with copyright and links
 
 **Home Page - Roadmap Overview**
 
-- [X] T025 [US1] Create HomePage component in src/pages/HomePage.tsx that loads roadmap data using dataLoader
-- [X] T026 [P] [US1] Create RoadmapHeader component in src/components/roadmap/RoadmapHeader.tsx to display title and user profile
-- [X] T027 [P] [US1] Create UserProfileCard component in src/components/roadmap/UserProfileCard.tsx showing background, skill level, learning goal
-- [X] T028 [US1] Create StageList component in src/components/roadmap/StageList.tsx to render all stages in grid layout
-- [X] T029 [P] [US1] Create StageCard component in src/components/roadmap/StageCard.tsx showing stage title, duration, goal, and module count with Apple-style card design
-- [X] T030 [P] [US1] Create LoadingSkeleton component in src/components/ui/LoadingSkeleton.tsx for initial data load state
-- [X] T031 [P] [US1] Create ErrorMessage component in src/components/ui/ErrorMessage.tsx with retry button for data load failures
+- [ ] T025 [US1] Create HomePage component in src/pages/HomePage.tsx that loads roadmap data using dataLoader
+- [ ] T026 [P] [US1] Create RoadmapHeader component in src/components/roadmap/RoadmapHeader.tsx to display title and user profile
+- [ ] T027 [P] [US1] Create UserProfileCard component in src/components/roadmap/UserProfileCard.tsx showing background, skill level, learning goal
+- [ ] T028 [US1] Create StageList component in src/components/roadmap/StageList.tsx to render all stages in grid layout
+- [ ] T029 [P] [US1] Create StageCard component in src/components/roadmap/StageCard.tsx showing stage title, duration, goal, and module count with Apple-style card design
+- [ ] T030 [P] [US1] Create LoadingSkeleton component in src/components/ui/LoadingSkeleton.tsx for initial data load state
+- [ ] T031 [P] [US1] Create ErrorMessage component in src/components/ui/ErrorMessage.tsx with retry button for data load failures
 
 **Responsive & Theme Support**
 
-- [X] T032 [US1] Implement responsive grid layout in StageList using Tailwind CSS breakpoints (mobile: 1 column, tablet: 2 columns, desktop: 3 columns)
-- [X] T033 [US1] Add dark mode CSS variables and color classes to all US1 components following Tailwind dark: prefix pattern
-- [X] T034 [US1] Test theme toggle with View Transitions API smooth transition effect in ThemeToggle component
-- [X] T035 [US1] Verify HomePage data validation with Zod schema and error handling for missing/invalid fields per contracts/data-operations.md
+- [ ] T032 [US1] Implement responsive grid layout in StageList using Tailwind CSS breakpoints (mobile: 1 column, tablet: 2 columns, desktop: 3 columns)
+- [ ] T033 [US1] Add dark mode CSS variables and color classes to all US1 components following Tailwind dark: prefix pattern
+- [ ] T034 [US1] Test theme toggle with View Transitions API smooth transition effect in ThemeToggle component
+- [ ] T035 [US1] Verify HomePage data validation with Zod schema and error handling for missing/invalid fields per contracts/data-operations.md
 
 **Checkpoint**: At this point, User Story 1 should be fully functional - users can view complete roadmap overview with responsive design and theme switching
 
@@ -116,30 +116,30 @@ This is a single-project web application with structure:
 
 **Routing & Navigation**
 
-- [X] T036 [P] [US2] Create StageDetailPage component in src/pages/StageDetailPage.tsx that loads stage data by ID using loadStageById()
-- [X] T037 [P] [US2] Create Breadcrumb component in src/components/ui/Breadcrumb.tsx showing navigation path (Home > Stage)
-- [X] T038 [P] [US2] Add link functionality to StageCard in src/components/roadmap/StageCard.tsx to navigate to /stage/:stageId
+- [ ] T036 [P] [US2] Create StageDetailPage component in src/pages/StageDetailPage.tsx that loads stage data by ID using loadStageById()
+- [ ] T037 [P] [US2] Create Breadcrumb component in src/components/ui/Breadcrumb.tsx showing navigation path (Home > Stage)
+- [ ] T038 [P] [US2] Add link functionality to StageCard in src/components/roadmap/StageCard.tsx to navigate to /stage/:stageId
 
 **Stage Detail Page**
 
-- [X] T039 [US2] Create StageHeader component in src/components/stage/StageHeader.tsx showing stage title, goal, estimated duration, and progress bar
-- [X] T040 [US2] Create ModuleList component in src/components/stage/ModuleList.tsx rendering all modules for the stage
-- [X] T041 [P] [US2] Create ModuleCard component in src/components/module/ModuleCard.tsx with expandable/collapsible design showing module title and purpose
-- [X] T042 [P] [US2] Create ModuleDetail component in src/components/module/ModuleDetail.tsx showing core concepts list, demystification analogy, and recommended resources when expanded
+- [ ] T039 [US2] Create StageHeader component in src/components/stage/StageHeader.tsx showing stage title, goal, estimated duration, and progress bar
+- [ ] T040 [US2] Create ModuleList component in src/components/stage/ModuleList.tsx rendering all modules for the stage
+- [ ] T041 [P] [US2] Create ModuleCard component in src/components/module/ModuleCard.tsx with expandable/collapsible design showing module title and purpose
+- [ ] T042 [P] [US2] Create ModuleDetail component in src/components/module/ModuleDetail.tsx showing core concepts list, demystification analogy, and recommended resources when expanded
 
 **Core Concepts & Resources**
 
-- [X] T043 [P] [US2] Create ConceptList component in src/components/module/ConceptList.tsx rendering core_concepts array with clickable concept titles
-- [X] T044 [P] [US2] Create ConceptCard component in src/components/concept/ConceptCard.tsx showing concept_title with preview excerpt
-- [X] T045 [P] [US2] Create ResourceList component in src/components/module/ResourceList.tsx rendering recommended_resources array
-- [X] T046 [P] [US2] Create ResourceCard component in src/components/resource/ResourceCard.tsx showing resource name, description, and external link button
+- [ ] T043 [P] [US2] Create ConceptList component in src/components/module/ConceptList.tsx rendering core_concepts array with clickable concept titles
+- [ ] T044 [P] [US2] Create ConceptCard component in src/components/concept/ConceptCard.tsx showing concept_title with preview excerpt
+- [ ] T045 [P] [US2] Create ResourceList component in src/components/module/ResourceList.tsx rendering recommended_resources array
+- [ ] T046 [P] [US2] Create ResourceCard component in src/components/resource/ResourceCard.tsx showing resource name, description, and external link button
 
 **Interaction & Animation**
 
-- [X] T047 [US2] Implement expand/collapse animation for ModuleCard using CSS transitions (duration: 300ms, easing: cubic-bezier(0.16, 1, 0.3, 1))
-- [X] T048 [US2] Add smooth scroll to expanded module using scrollIntoView with behavior: 'smooth'
-- [X] T049 [US2] Implement back navigation functionality in Breadcrumb and test browser back button behavior
-- [X] T050 [US2] Handle missing data gracefully (display placeholder for missing demystification_analogy or empty recommended_resources)
+- [ ] T047 [US2] Implement expand/collapse animation for ModuleCard using CSS transitions (duration: 300ms, easing: cubic-bezier(0.16, 1, 0.3, 1))
+- [ ] T048 [US2] Add smooth scroll to expanded module using scrollIntoView with behavior: 'smooth'
+- [ ] T049 [US2] Implement back navigation functionality in Breadcrumb and test browser back button behavior
+- [ ] T050 [US2] Handle missing data gracefully (display placeholder for missing demystification_analogy or empty recommended_resources)
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently - users can navigate from roadmap to stage details and view module content
 
@@ -160,31 +160,31 @@ This is a single-project web application with structure:
 
 **FlexSearch Integration**
 
-- [X] T051 [P] [US3] Install flexsearch dependency and create search index builder script in scripts/buildSearchIndex.ts
-- [X] T052 [US3] Implement buildSearchIndex script that parses duanju.json and creates FlexSearch Document index with CJK tokenizer per contracts/data-operations.md
-- [X] T053 [US3] Add npm script "build:search-index" in package.json to run buildSearchIndex and output to src/data/searchIndex.json
-- [X] T054 [P] [US3] Create search service in src/lib/searchService.ts with searchContent() function using FlexSearch per contracts/data-operations.md
+- [ ] T051 [P] [US3] Install flexsearch dependency and create search index builder script in scripts/buildSearchIndex.ts
+- [ ] T052 [US3] Implement buildSearchIndex script that parses duanju.json and creates FlexSearch Document index with CJK tokenizer per contracts/data-operations.md
+- [ ] T053 [US3] Add npm script "build:search-index" in package.json to run buildSearchIndex and output to src/data/searchIndex.json
+- [ ] T054 [P] [US3] Create search service in src/lib/searchService.ts with searchContent() function using FlexSearch per contracts/data-operations.md
 
 **Search UI Components**
 
-- [X] T055 [P] [US3] Create SearchBar component in src/components/search/SearchBar.tsx with debounced input (300ms) and clear button
-- [X] T056 [P] [US3] Create SearchPage component in src/pages/SearchPage.tsx that displays search results with routing at /search
-- [X] T057 [P] [US3] Create SearchResults component in src/components/search/SearchResults.tsx rendering search results with match count
-- [X] T058 [P] [US3] Create SearchResultCard component in src/components/search/SearchResultCard.tsx showing result type (stage/module/concept), title, and excerpt with highlighting
+- [ ] T055 [P] [US3] Create SearchBar component in src/components/search/SearchBar.tsx with debounced input (300ms) and clear button
+- [ ] T056 [P] [US3] Create SearchPage component in src/pages/SearchPage.tsx that displays search results with routing at /search
+- [ ] T057 [P] [US3] Create SearchResults component in src/components/search/SearchResults.tsx rendering search results with match count
+- [ ] T058 [P] [US3] Create SearchResultCard component in src/components/search/SearchResultCard.tsx showing result type (stage/module/concept), title, and excerpt with highlighting
 
 **Filtering UI**
 
-- [X] T059 [P] [US3] Create FilterBar component in src/components/search/FilterBar.tsx with stage selector dropdown
-- [X] T060 [US3] Create StageFilter component in src/components/search/StageFilter.tsx allowing single stage selection with "All Stages" option
-- [X] T061 [US3] Integrate FilterBar with SearchPage and apply filters to search results using searchContent options parameter
+- [ ] T059 [P] [US3] Create FilterBar component in src/components/search/FilterBar.tsx with stage selector dropdown
+- [ ] T060 [US3] Create StageFilter component in src/components/search/StageFilter.tsx allowing single stage selection with "All Stages" option
+- [ ] T061 [US3] Integrate FilterBar with SearchPage and apply filters to search results using searchContent options parameter
 
 **Search Features**
 
-- [X] T062 [US3] Implement text highlighting in SearchResultCard using mark.js or custom regex replacement with <mark> tags per contracts/data-operations.md generateExcerpt function
-- [X] T063 [US3] Add empty state UI in SearchResults for "no results found" with search suggestions
-- [X] T064 [US3] Implement search result pagination (20 results per page) with "Load More" button
-- [X] T065 [US3] Add SearchBar to Header component for global search access across all pages
-- [X] T066 [US3] Test search performance with large dataset and verify <200ms response time per success criteria SC-007
+- [ ] T062 [US3] Implement text highlighting in SearchResultCard using mark.js or custom regex replacement with <mark> tags per contracts/data-operations.md generateExcerpt function
+- [ ] T063 [US3] Add empty state UI in SearchResults for "no results found" with search suggestions
+- [ ] T064 [US3] Implement search result pagination (20 results per page) with "Load More" button
+- [ ] T065 [US3] Add SearchBar to Header component for global search access across all pages
+- [ ] T066 [US3] Test search performance with large dataset and verify <200ms response time per success criteria SC-007
 
 **Checkpoint**: At this point, User Stories 1, 2, AND 3 should all work independently - users can search, filter, and navigate seamlessly
 
@@ -205,32 +205,32 @@ This is a single-project web application with structure:
 
 **Markdown Rendering**
 
-- [X] T067 [P] [US4] Install react-markdown, remark-gfm, and react-syntax-highlighter dependencies per research.md
-- [X] T068 [P] [US4] Create MarkdownRenderer component in src/components/ui/MarkdownRenderer.tsx with react-markdown and GFM plugin support
-- [X] T069 [P] [US4] Configure syntax highlighting in MarkdownRenderer using react-syntax-highlighter with theme matching light/dark mode
-- [X] T070 [P] [US4] Create custom Markdown component overrides in src/components/ui/MarkdownComponents.tsx for headings, links, code blocks, tables
+- [ ] T067 [P] [US4] Install react-markdown, remark-gfm, and react-syntax-highlighter dependencies per research.md
+- [ ] T068 [P] [US4] Create MarkdownRenderer component in src/components/ui/MarkdownRenderer.tsx with react-markdown and GFM plugin support
+- [ ] T069 [P] [US4] Configure syntax highlighting in MarkdownRenderer using react-syntax-highlighter with theme matching light/dark mode
+- [ ] T070 [P] [US4] Create custom Markdown component overrides in src/components/ui/MarkdownComponents.tsx for headings, links, code blocks, tables
 
 **Concept Detail Page**
 
-- [X] T071 [US4] Create ConceptDetailPage component in src/pages/ConceptDetailPage.tsx that loads concept by stageId, moduleIndex, conceptIndex
-- [X] T072 [P] [US4] Create ConceptHeader component in src/components/concept/ConceptHeader.tsx showing concept_title and estimated reading time
-- [X] T073 [US4] Create ConceptContent component in src/components/concept/ConceptContent.tsx using MarkdownRenderer to display concept_detail
-- [X] T074 [P] [US4] Update Breadcrumb component to support 4-level navigation (Home > Stage > Module > Concept)
-- [X] T075 [US4] Add navigation links to ConceptCard in src/components/concept/ConceptCard.tsx to route to /concept/:stageId/:moduleIndex/:conceptIndex
+- [ ] T071 [US4] Create ConceptDetailPage component in src/pages/ConceptDetailPage.tsx that loads concept by stageId, moduleIndex, conceptIndex
+- [ ] T072 [P] [US4] Create ConceptHeader component in src/components/concept/ConceptHeader.tsx showing concept_title and estimated reading time
+- [ ] T073 [US4] Create ConceptContent component in src/components/concept/ConceptContent.tsx using MarkdownRenderer to display concept_detail
+- [ ] T074 [P] [US4] Update Breadcrumb component to support 4-level navigation (Home > Stage > Module > Concept)
+- [ ] T075 [US4] Add navigation links to ConceptCard in src/components/concept/ConceptCard.tsx to route to /concept/:stageId/:moduleIndex/:conceptIndex
 
 **Content Optimization**
 
-- [X] T076 [US4] Implement virtual scrolling for long concept_detail content (>10,000 characters) using react-window per research.md and spec.md edge cases (Optional - deferred for future optimization)
-- [X] T077 [US4] Add table of contents navigation in ConceptContent for long documents with anchor links to Markdown headings (Optional - can be added later)
-- [X] T078 [US4] Implement useMemo caching for MarkdownRenderer to avoid re-rendering on theme toggle (Implemented via React.memo)
-- [X] T079 [US4] Test Markdown rendering with all GFM features (tables, task lists, strikethrough) from concept_detail examples (GFM support confirmed via remark-gfm)
+- [ ] T076 [US4] Implement virtual scrolling for long concept_detail content (>10,000 characters) using react-window per research.md and spec.md edge cases
+- [ ] T077 [US4] Add table of contents navigation in ConceptContent for long documents with anchor links to Markdown headings
+- [ ] T078 [US4] Implement useMemo caching for MarkdownRenderer to avoid re-rendering on theme toggle
+- [ ] T079 [US4] Test Markdown rendering with all GFM features (tables, task lists, strikethrough) from concept_detail examples
 
 **Navigation & UX**
 
-- [X] T080 [US4] Create RelatedConcepts component in src/components/concept/RelatedConcepts.tsx showing other concepts from same module (Optional - deferred)
-- [X] T081 [US4] Add "Next Concept" and "Previous Concept" navigation buttons in ConceptDetailPage (Optional - deferred)
-- [X] T082 [US4] Implement smooth scroll to top when navigating between concepts (Browser default behavior)
-- [X] T083 [US4] Handle missing detail_file references gracefully (show only concept_detail content) (Handled in component logic)
+- [ ] T080 [US4] Create RelatedConcepts component in src/components/concept/RelatedConcepts.tsx showing other concepts from same module
+- [ ] T081 [US4] Add "Next Concept" and "Previous Concept" navigation buttons in ConceptDetailPage
+- [ ] T082 [US4] Implement smooth scroll to top when navigating between concepts
+- [ ] T083 [US4] Handle missing detail_file references gracefully (show only concept_detail content)
 
 **Checkpoint**: At this point, User Stories 1-4 should all work independently - users can view full concept details with rich Markdown formatting
 
