@@ -18,6 +18,7 @@ export interface SearchDocument {
   stage_id: string
   module_id?: string
   concept_id?: string
+  [key: string]: string | undefined
 }
 
 // 搜索结果接口
@@ -51,17 +52,17 @@ export interface SearchResponse {
 }
 
 // 创建搜索索引实例
-let searchIndex: FlexSearch.Document<SearchDocument> | null = null
+let searchIndex: any = null
 
 /**
  * 初始化搜索索引
  */
-function initializeSearchIndex(): FlexSearch.Document<SearchDocument> {
+function initializeSearchIndex(): any {
   if (searchIndex) {
     return searchIndex
   }
 
-  const index = new FlexSearch.Document<SearchDocument>({
+  const index = new (FlexSearch as any).Document({
     document: {
       id: 'id',
       index: ['title', 'content', 'keywords'],

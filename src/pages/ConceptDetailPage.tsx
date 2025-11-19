@@ -5,7 +5,7 @@
  */
 
 import { useEffect, useState } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { loadRoadmapData } from '@/lib/dataLoader'
 import { ConceptHeader } from '@/components/concept/ConceptHeader'
 import { ConceptContent } from '@/components/concept/ConceptContent'
@@ -20,7 +20,6 @@ export function ConceptDetailPage() {
     moduleIndex: string
     conceptIndex: string
   }>()
-  const navigate = useNavigate()
 
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -73,7 +72,7 @@ export function ConceptDetailPage() {
     return (
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <LoadingSkeleton count={5} height="h-32" />
+          <LoadingSkeleton />
         </div>
       </div>
     )

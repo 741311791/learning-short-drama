@@ -10,7 +10,6 @@ import { searchContent, type SearchResult } from '@/lib/searchService'
 import { SearchBar } from '@/components/search/SearchBar'
 import { FilterBar } from '@/components/search/FilterBar'
 import { SearchResults } from '@/components/search/SearchResults'
-import { cn } from '@/lib/utils'
 
 export function SearchPage() {
   const [searchParams, setSearchParams] = useSearchParams()

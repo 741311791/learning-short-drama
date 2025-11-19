@@ -297,8 +297,8 @@ This is a single-project web application with structure:
 
 **Performance Optimization**
 
-- [ ] T107 [P] Implement code splitting for routes in src/App.tsx using React.lazy and Suspense
-- [ ] T108 [P] Configure Vite build with manual chunks per research.md (vendor, ui, data chunks)
+- [X] T107 [P] Implement code splitting for routes in src/App.tsx using React.lazy and Suspense
+- [X] T108 [P] Configure Vite build with manual chunks per research.md (vendor, ui, data chunks)
 - [ ] T109 [P] Add resource preloading for duanju.json in index.html using <link rel="preload">
 - [ ] T110 [P] Optimize images and fonts with proper loading strategies (font-display: swap, image loading: lazy)
 - [ ] T111 Implement Web Worker for Markdown parsing in MarkdownRenderer per research.md risk mitigation
@@ -315,7 +315,7 @@ This is a single-project web application with structure:
 
 **Error Handling & Edge Cases**
 
-- [ ] T119 [P] Implement global error boundary in src/App.tsx catching React errors with fallback UI
+- [X] T119 [P] Implement global error boundary in src/App.tsx catching React errors with fallback UI
 - [ ] T120 [P] Add retry logic to dataLoader.ts with exponential backoff per contracts/data-operations.md withRetry function
 - [ ] T121 [P] Handle slow network scenarios with timeout and skeleton loading states per spec.md edge cases
 - [ ] T122 [P] Add validation for missing required fields in duanju.json with console warnings per spec.md edge cases
@@ -323,16 +323,16 @@ This is a single-project web application with structure:
 
 **Documentation & Deployment**
 
-- [ ] T124 [P] Update README.md with project overview, tech stack, and quickstart instructions based on quickstart.md
+- [X] T124 [P] Update README.md with project overview, tech stack, and quickstart instructions based on quickstart.md
 - [ ] T125 [P] Create CONTRIBUTING.md with development workflow and code style guidelines
 - [ ] T126 [P] Document how to update duanju.json content in docs/content-update-guide.md
-- [ ] T127 Configure Vercel deployment with vercel.json for SPA routing and performance headers per research.md
-- [ ] T128 [P] Setup GitHub Actions CI/CD workflow (.github/workflows/ci.yml) with type-check, lint, build steps per research.md
+- [X] T127 Configure Vercel deployment with vercel.json for SPA routing and performance headers per research.md
+- [X] T128 [P] Setup GitHub Actions CI/CD workflow (.github/workflows/ci.yml) with type-check, lint, build steps per research.md
 - [ ] T129 Add performance monitoring script using Web Vitals API in src/lib/webVitals.ts
 
 **Final Validation**
 
-- [ ] T130 Run quickstart.md validation: verify npm install, npm run dev, npm run build all succeed
+- [X] T130 Run quickstart.md validation: verify npm install, npm run dev, npm run build all succeed
 - [ ] T131 Test all acceptance scenarios from spec.md for User Stories 1-5 manually
 - [ ] T132 Verify all 12 success criteria (SC-001 through SC-012) are met per spec.md
 - [ ] T133 Run final Lighthouse audit on deployed site and document results
